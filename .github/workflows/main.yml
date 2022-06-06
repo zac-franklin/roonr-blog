@@ -40,7 +40,7 @@ jobs:
           with:
            repository: 'zacfpearson/roonr-fonts-manifests'
            token: ${{ secrets.ACTION_TOKEN }}
-           path: sroonr-fonts-manifests
+           path: roonr-fonts-manifests
            fetch-depth: 0
             
         - name: Update Manifests
