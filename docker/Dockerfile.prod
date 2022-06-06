@@ -1,0 +1,12 @@
+FROM alpine:latest as builder
+
+COPY . /blog
+WORKDIR /blog
+
+RUN apk add zola --repository http://dl-cdn.alpinelinux.org/alpine/edge/community && \
+    zola build
+
+FROM nginx
+COPY --from=builder /blog/public /usr/share/nginx/html
+
+
