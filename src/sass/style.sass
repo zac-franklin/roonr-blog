@@ -1,0 +1,145 @@
+$font-stack: 'CCUpUpAndAway', sans-serif
+$primary-color: #5F9EA0
+$inline-color: #000000
+$outline-color: #000000
+$shadow-color: #444444
+
+$font-inline: 'CCUpUpAndAwayInline', sans-serif
+$font-outline: 'CCUpUpAndAwayOutline', sans-serif
+$font-shadow: 'CCUpUpAndAwayShadow', sans-serif
+$font-radikal: 'Radikal', sans-serif
+
+body
+  font: 21px $font-radikal
+  color: $shadow-color
+  max-width: 1500px
+  margin: 0 auto
+
+.my-img
+  margin-top: 10px
+
+.spiel
+  padding-top: 50px
+  padding-bottom: 50px
+
+.comic::before
+  position: absolute
+  top: 0px
+  left: 0px
+  content: attr(text)
+  font-family: $font-shadow
+  color: $shadow-color
+  pointer-events: none
+  margin: 0 auto
+  width: 100%
+
+.comic
+  position: relative
+  font: 42px $font-stack
+  color: $primary-color
+  letter-spacing: .2em
+  text-align: center
+
+.comic::after
+  position: absolute
+  top: 0px
+  left: 0px
+  content: attr(text)
+  font-family: $font-outline
+  color: $outline-color
+  pointer-events: none
+  margin: 0 auto
+  width: 100%
+
+.comic-container
+  position: relative
+  margin: 0 auto
+  top: 0px 
+  left: 0px
+  width: 100%
+  text-align: center
+
+.blogs
+  position: relative
+  padding-top: 10px
+  padding-bottom: 10px
+  border-top: 2px solid $primary-color
+  border-bottom: 2px solid $primary-color
+
+.blogs-grid
+  padding-top: 50px
+  padding-bottom: 50px
+  display: grid
+  grid-template-columns: repeat(3, 1fr)
+  gap: 10px
+  grid-auto-rows: minmax(100px, auto)
+
+.blog-dev
+  border: 2px solid $primary-color
+  grid-column: 1
+  grid-row: 1
+
+.blog-writing
+  border: 2px solid $primary-color
+  grid-column: 2
+  grid-row: 1
+
+.blog-random
+  border: 2px solid $primary-color
+  grid-column: 3
+  grid-row: 1
+
+.projects
+  position: relative
+  padding-top: 10px
+  padding-bottom: 10px
+  border-top: 2px solid $primary-color
+  border-bottom: 2px solid $primary-color
+
+.projects-grid
+  padding-top: 50px
+  padding-bottom: 50px
+  display: grid
+  grid-template-columns: repeat(2, 1fr)
+  gap: 10px
+  grid-auto-rows: minmax(100px, auto)
+
+.project-sentiment
+  border: 2px solid $primary-color
+  grid-column: 1
+  grid-row: 1
+
+.project-sunflower
+  border: 2px solid $primary-color
+  grid-column: 2
+  grid-row: 1
+
+.center-text
+  margin-top: 34px
+  margin-bottom: 34px
+  display: inline-block
+  width: 100%
+  vertical-align: middle
+  text-align: center
+
+.post-tile
+  border: 2px solid $primary-color
+  display: block
+  max-width: 1000px;
+  margin: 20px auto; 
+  width: 100%;
+
+.center
+  width: 100%
+  margin: 0 auto
+  text-align: center
+
+img
+  display: block
+  width: 100%
+  margin: 0 auto
+  max-width: 300px
+
+p
+  margin: 0 0 0 0
+

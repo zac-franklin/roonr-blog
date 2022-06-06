@@ -1,0 +1,55 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 4871155, 2022-05-21T22:01:51-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: CCUpUpAndAwayShadow by Comicraft
+ * URL: https://www.myfonts.com/fonts/comicraft/up-up-and-away/shadow/
+ * 
+ * Webfont: CCUpUpAndAwayInline by Comicraft
+ * URL: https://www.myfonts.com/fonts/comicraft/up-up-and-away/inline/
+ * 
+ * Webfont: CCUpUpAndAway by Comicraft
+ * URL: https://www.myfonts.com/fonts/comicraft/up-up-and-away/regular/
+ * 
+ * Webfont: CCUpUpAndAwayOutline by Comicraft
+ * URL: https://www.myfonts.com/fonts/comicraft/up-up-and-away/outline/
+ * 
+ * Webfont: CCUpUpAndAwayPopup by Comicraft
+ * URL: https://www.myfonts.com/fonts/comicraft/up-up-and-away/popup/
+ * 
+ * 
+ * Webfonts copyright: Copyright (c) 2017 by Comicraft. All rights reserved.
+ * 
+ * © 2022 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+/*@import url("//hello.myfonts.net/count/4a53f3");*/
+
+@font-face {
+  font-family: "CCUpUpAndAwayPopup";
+  src: url('/webFonts/fonts/CCUpUpAndAwayPopup/font.woff2') format('woff2'), url('webFonts/fonts/CCUpUpAndAwayPopup/font.woff') format('woff');
+}
+@font-face {
+  font-family: "CCUpUpAndAwayShadow";
+  src: url('/webFonts/fonts/CCUpUpAndAwayShadow/font.woff2') format('woff2'), url('webFonts/fonts/CCUpUpAndAwayShadow/font.woff') format('woff');
+}
+@font-face {
+  font-family: "CCUpUpAndAwayOutline";
+  src: url('/webFonts/fonts/CCUpUpAndAwayOutline/font.woff2') format('woff2'), url('webFonts/fonts/CCUpUpAndAwayOutline/font.woff') format('woff');
+}
+@font-face {
+  font-family: "CCUpUpAndAwayInline";
+  src: url('/webFonts/fonts/CCUpUpAndAwayInline/font.woff2') format('woff2'), url('webFonts/fonts/CCUpUpAndAwayInline/font.woff') format('woff');
+}
+@font-face {
+  font-family: "CCUpUpAndAway";
+  src: url('/webFonts/fonts/CCUpUpAndAway/font.woff2') format('woff2'), url('webFonts/fonts/CCUpUpAndAway/font.woff') format('woff');
+}

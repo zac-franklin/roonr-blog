@@ -1,0 +1,53 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 4871154, 2022-05-21T22:00:49-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: Radikal-Bold by Nootype
+ * URL: https://www.myfonts.com/fonts/nootype/radikal/bold/
+ * Copyright: Copyright &amp;#x00A9; 2013 by Nico Inosanto. All rights reserved.
+ * 
+ * Webfont: Radikal-Regular by Nootype
+ * URL: https://www.myfonts.com/fonts/nootype/radikal/regular/
+ * Copyright: Copyright &amp;#x00A9; 2013 by Nico Inosanto. All rights reserved.
+ * 
+ * Webfont: Radikal-RegularItalic by Nootype
+ * URL: https://www.myfonts.com/fonts/nootype/radikal/italic/
+ * Copyright: Copyright (c) 2013 by Nico Inosanto. All rights reserved.
+ * 
+ * 
+ * 
+ * © 2022 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/4a53f2");
+
+@font-face {
+  font-family: "Radikal";
+  font-style: normal;
+  font-weight: normal;
+  font-stretch: normal;
+  src: url('/webFonts/fonts/Radikal/normal_normal_normal.woff2') format('woff2'), url('webFonts/fonts/Radikal/normal_normal_normal.woff') format('woff');
+}
+@font-face {
+  font-family: "Radikal";
+  font-style: normal;
+  font-weight: bold;
+  font-stretch: normal;
+  src: url('/webFonts/fonts/Radikal/normal_normal_bold.woff2') format('woff2'), url('webFonts/fonts/Radikal/normal_normal_bold.woff') format('woff');
+}
+@font-face {
+  font-family: "Radikal";
+  font-style: italic;
+  font-weight: normal;
+  font-stretch: normal;
+  src: url('/webFonts/fonts/Radikal/italic_normal_normal.woff2') format('woff2'), url('webFonts/fonts/Radikal/italic_normal_normal.woff') format('woff');
+}
+

@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+
+{% block header %}
+<img class="my-img" src="images/myPic.jpg" alt="Me"/>
+
+<div class="comic-container spiel">
+	<div class="comic" text="">
+           {{ section.content | safe }} 	
+	</div>
+</div>
+
+{% endblock header %}
+
+{% block content %}
+<div class="comic-container blogs">
+	<div class="comic" text="">
+		<p>BLOGS</p>
+	</div>
+</div>
+<div class="blogs-grid">
+	<a href="/dev-blog" class="blog-dev">
+		<div class="center-text">
+			dev
+		</div>
+        </a>
+	<a href="/writing-blog" class="blog-writing">
+		<div class="center-text">
+			writing
+		</div>
+	</a>
+	<a href="/random-blog" class="blog-random">
+		<div class="center-text">
+			random
+		</div>
+	</a>
+</div>
+
+<div class="comic-container projects">
+	<div class="comic" text="">
+		<p>PROJECTS</p>
+	</div>
+</div>
+<div class="projects-grid">
+	<!--<a href="/blog" class="project-sentiment">
+		<div class="center-text">
+			sentiment
+		</div>
+	</a>
+	<a href="/blog" class="project-sunflower">
+		<div class="center-text">
+			sunflower
+		</div>
+	</a>-->
+</div>
+{% endblock content %}
