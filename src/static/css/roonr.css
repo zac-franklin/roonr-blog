@@ -34,20 +34,20 @@
   font-style: normal;
   font-weight: normal;
   font-stretch: normal;
-  src: url('/webFonts/fonts/Radikal/normal_normal_normal.woff2') format('woff2'), url('webFonts/fonts/Radikal/normal_normal_normal.woff') format('woff');
+  src: url('/webFonts/fonts/Radikal/normal_normal_normal.woff2') format('woff2'), url('/webFonts/fonts/Radikal/normal_normal_normal.woff') format('woff');
 }
 @font-face {
   font-family: "Radikal";
   font-style: normal;
   font-weight: bold;
   font-stretch: normal;
-  src: url('/webFonts/fonts/Radikal/normal_normal_bold.woff2') format('woff2'), url('webFonts/fonts/Radikal/normal_normal_bold.woff') format('woff');
+  src: url('/webFonts/fonts/Radikal/normal_normal_bold.woff2') format('woff2'), url('/webFonts/fonts/Radikal/normal_normal_bold.woff') format('woff');
 }
 @font-face {
   font-family: "Radikal";
   font-style: italic;
   font-weight: normal;
   font-stretch: normal;
-  src: url('/webFonts/fonts/Radikal/italic_normal_normal.woff2') format('woff2'), url('webFonts/fonts/Radikal/italic_normal_normal.woff') format('woff');
+  src: url('/webFonts/fonts/Radikal/italic_normal_normal.woff2') format('woff2'), url('/webFonts/fonts/Radikal/italic_normal_normal.woff') format('woff');
 }
 

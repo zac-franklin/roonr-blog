@@ -35,21 +35,21 @@
 
 @font-face {
   font-family: "CCUpUpAndAwayPopup";
-  src: url('/webFonts/fonts/CCUpUpAndAwayPopup/font.woff2') format('woff2'), url('webFonts/fonts/CCUpUpAndAwayPopup/font.woff') format('woff');
+  src: url('/webFonts/fonts/CCUpUpAndAwayPopup/font.woff2') format('woff2'), url('/webFonts/fonts/CCUpUpAndAwayPopup/font.woff') format('woff');
 }
 @font-face {
   font-family: "CCUpUpAndAwayShadow";
-  src: url('/webFonts/fonts/CCUpUpAndAwayShadow/font.woff2') format('woff2'), url('webFonts/fonts/CCUpUpAndAwayShadow/font.woff') format('woff');
+  src: url('/webFonts/fonts/CCUpUpAndAwayShadow/font.woff2') format('woff2'), url('/webFonts/fonts/CCUpUpAndAwayShadow/font.woff') format('woff');
 }
 @font-face {
   font-family: "CCUpUpAndAwayOutline";
-  src: url('/webFonts/fonts/CCUpUpAndAwayOutline/font.woff2') format('woff2'), url('webFonts/fonts/CCUpUpAndAwayOutline/font.woff') format('woff');
+  src: url('/webFonts/fonts/CCUpUpAndAwayOutline/font.woff2') format('woff2'), url('/webFonts/fonts/CCUpUpAndAwayOutline/font.woff') format('woff');
 }
 @font-face {
   font-family: "CCUpUpAndAwayInline";
-  src: url('/webFonts/fonts/CCUpUpAndAwayInline/font.woff2') format('woff2'), url('webFonts/fonts/CCUpUpAndAwayInline/font.woff') format('woff');
+  src: url('/webFonts/fonts/CCUpUpAndAwayInline/font.woff2') format('woff2'), url('/webFonts/fonts/CCUpUpAndAwayInline/font.woff') format('woff');
 }
 @font-face {
   font-family: "CCUpUpAndAway";
-  src: url('/webFonts/fonts/CCUpUpAndAway/font.woff2') format('woff2'), url('webFonts/fonts/CCUpUpAndAway/font.woff') format('woff');
+  src: url('/webFonts/fonts/CCUpUpAndAway/font.woff2') format('woff2'), url('/webFonts/fonts/CCUpUpAndAway/font.woff') format('woff');
 }
