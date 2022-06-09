@@ -1,0 +1,211 @@
+$dark-theme: "dark-them";
+$light-theme: "light-theme";
+
+$primary-color: "primary-color";
+$inline-color: "inline-color";
+$outline-color: "outline-color";
+$shadow-color: "shadow-color";
+$body-background: "body-background";
+
+$themes: ( 
+  $light-theme: (
+    $primary-color: #5F9EA0, 
+    $inline-color: #000000, 
+    $outline-color: #000000, 
+    $shadow-color: #444444, 
+    $body-background: #FFFFFF,
+  ), 
+  $dark-theme: ( 
+    $primary-color: #A0615F, 
+    $inline-color: #FFFFFF, 
+    $outline-color: #FFFFFF, 
+    $shadow-color: #BBBBBB,
+    $body-background: #111111,
+  ) 
+);
+
+@mixin themeProperty($theme, $property, $color, $additionalPropertiesPositionIsFront, $additionalProperties) {
+  @if $additionalPropertiesPositionIsFront {
+    #{$property}: unquote($additionalProperties + ' ' + map-get($theme, $color));
+  }
+  @else {
+    #{$property}: unquote(map-get($theme, $color) + ' ' + $additionalProperties);
+  }
+}
+
+@mixin theme($property, $color, $additionalPropertiesPositionIsFront: false, $additionalProperties: '') {
+    $light: map-get($themes, $light-theme);
+    $dark: map-get($themes, $dark-theme);
+
+    @include themeProperty($light, $property, $color, $additionalPropertiesPositionIsFront, $additionalProperties);
+
+    @media (prefers-color-scheme: dark) {
+      @include themeProperty($dark, $property, $color, $additionalPropertiesPositionIsFront, $additionalProperties);
+    }
+}
+ 
+
+$font-stack: 'CCUpUpAndAway', sans-serif;
+$font-inline: 'CCUpUpAndAwayInline', sans-serif;
+$font-outline: 'CCUpUpAndAwayOutline', sans-serif;
+$font-shadow: 'CCUpUpAndAwayShadow', sans-serif;
+$font-radikal: 'Radikal', sans-serif;
+
+body {
+  font: 21px $font-radikal;
+  max-width: 1500px;
+  margin: 0 auto;
+  @include theme('color', $shadow-color);
+  @include theme('background-color', $body-background);
+}
+
+.my-img {
+  margin-top: 10px;
+}
+
+.spiel {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.comic::before {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  content: attr(text);
+  font-family: $font-shadow;
+  pointer-events: none;
+  margin: 0 auto;
+  width: 100%;
+  @include theme('color', $shadow-color);
+}
+ 
+
+.comic {
+  position: relative;
+  font: 42px $font-stack;
+  letter-spacing: .2em;
+  text-align: center;
+  @include theme('color', $primary-color);
+}
+
+
+.comic::after {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  content: attr(text);
+  font-family: $font-outline;
+  pointer-events: none;
+  margin: 0 auto;
+  width: 100%;
+  @include theme('color', $outline-color);
+}
+
+.comic-container {
+  position: relative;
+  margin: 0 auto;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  text-align: center;
+}
+
+.blogs {
+  position: relative;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  @include theme('border-top', $primary-color, true, '2px solid');
+  @include theme('border-bottom', $primary-color, true, '2px solid');
+}
+
+.blogs-grid {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.blog-dev {
+  @include theme('border', $primary-color, true, '2px solid');
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.blog-writing {
+  @include theme('border', $primary-color, true, '2px solid');
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.blog-random {
+  @include theme('border', $primary-color, true, '2px solid');
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.projects {
+  position: relative;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  @include theme('border-top', $primary-color, true, '2px solid');
+  @include theme('border-bottom', $primary-color, true, '2px solid');
+}
+
+.projects-grid {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.project-sentiment {
+  @include theme('border', $primary-color, true, '2px solid');
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.project-sunflower {
+  @include theme('border', $primary-color, true, '2px solid');
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.center-text {
+  margin-top: 34px;
+  margin-bottom: 34px;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.post-tile {
+  @include theme('border', $primary-color, true, '2px solid');
+  display: block;
+  max-width: 1000px;
+  margin: 20px auto; 
+  width: 100%;
+}
+
+.center {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+img {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 300px;
+}
+
+p {
+  margin: 0 0 0 0;
+}
+
