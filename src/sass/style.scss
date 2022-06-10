@@ -6,21 +6,28 @@ $inline-color: "inline-color";
 $outline-color: "outline-color";
 $shadow-color: "shadow-color";
 $body-background: "body-background";
+$text-color: "text-color";
+$href-color: "href-color";
 
 $themes: ( 
   $light-theme: (
-    $primary-color: #5F9EA0, 
-    $inline-color: #000000, 
-    $outline-color: #000000, 
-    $shadow-color: #444444, 
-    $body-background: #FFFFFF,
+    $primary-color: #FD7014, 
+    $inline-color: #222831, 
+    $outline-color: #222831, 
+    $shadow-color: #393E46,
+    $body-background: #EEEEEE,
+    $text-color: #222831,
+    $href-color: #4F3B78,
+
   ), 
   $dark-theme: ( 
-    $primary-color: #A0615F, 
-    $inline-color: #FFFFFF, 
-    $outline-color: #FFFFFF, 
-    $shadow-color: #BBBBBB,
-    $body-background: #111111,
+    $primary-color: #EEEEEE, 
+    $inline-color: #393E46, 
+    $outline-color: #393E46, 
+    $shadow-color: #FD7014,
+    $body-background: #222831,
+    $text-color: #EEEEEE,
+    $href-color: #927FBF,
   ) 
 );
 
@@ -55,8 +62,12 @@ body {
   font: 21px $font-radikal;
   max-width: 1500px;
   margin: 0 auto;
-  @include theme('color', $shadow-color);
+  @include theme('color', $text-color);
   @include theme('background-color', $body-background);
+}
+
+a {
+  @include theme('color', $href-color);
 }
 
 .my-img {
