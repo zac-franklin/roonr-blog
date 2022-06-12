@@ -12,4 +12,22 @@
 <div>
 	{{ page.content | safe }}
 </div>
+
+<div class="giscus"></div>
+
+<script src="https://giscus.app/client.js"
+        data-repo="zacfpearson/roonr-blog"
+        data-repo-id="R_kgDOHdEH4g"
+        data-category="Blog Comments"
+        data-category-id="DIC_kwDOHdEH4s4CPoXq"
+        data-mapping="specific"
+        data-term="{{ page.title }}"
+        data-reactions-enabled="1"
+        data-emit-metadata="1"
+        data-theme="preferred_color_scheme"
+	data-lang="en"
+        crossorigin="anonymous"
+	async>
+</script>
+
 {% endblock content %}
