@@ -220,3 +220,16 @@ p {
   margin: 0 0 0 0;
 }
 
+.arr {
+  font-size:32px;
+  width:100%;
+  @include theme('border', $primary-color, true, '2px solid');
+  display:inline-block;
+  background-color:transparent;
+  text-align: center;
+}
+
+.flex {
+  flex: 1;
+}
+
