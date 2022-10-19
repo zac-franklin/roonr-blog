@@ -227,6 +227,7 @@ p {
   display:inline-block;
   background-color:transparent;
   text-align: center;
+  @include theme('color', $text-color);
 }
 
 .flex {
