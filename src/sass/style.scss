@@ -236,10 +236,12 @@ p {
 
 .backspace_button {
   @include theme('border-color', $outline-color);
+  @include theme('color', $text-color);
 }
 
 .choice_button {
   @include theme('border-color', $outline-color);
+  @include theme('color', $text-color);
 }
 
 .guess_div {
