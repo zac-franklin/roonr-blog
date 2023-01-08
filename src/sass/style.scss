@@ -234,3 +234,15 @@ p {
   flex: 1;
 }
 
+.backspace_button {
+  @include theme('border-color', $outline-color);
+}
+
+.choice_button {
+  @include theme('border-color', $outline-color);
+}
+
+.guess_div {
+  @include theme('border-color', $outline-color);
+}
+
