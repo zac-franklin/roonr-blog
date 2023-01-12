@@ -248,3 +248,7 @@ p {
   @include theme('border-color', $outline-color);
 }
 
+.snackbar {
+  @include theme('border-color', $shadow-color);
+}
+
