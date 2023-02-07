@@ -174,7 +174,7 @@ a {
   grid-auto-rows: minmax(100px, auto);
 }
 
-.project-sentiment {
+.project-alphabet {
   @include theme('border', $primary-color, true, '2px solid');
   grid-column: 1;
   grid-row: 1;
