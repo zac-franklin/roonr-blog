@@ -199,7 +199,7 @@ a {
   @include theme('border', $primary-color, true, '2px solid');
   display: block;
   max-width: 1000px;
-  margin: 20px 7px; 
+  margin: 20px auto; 
   width: 100%;
 }
 
