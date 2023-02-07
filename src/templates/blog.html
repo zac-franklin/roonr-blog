@@ -1,18 +1,20 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div class="center" style="padding-left:7px;padding-right:7px;">
+<div class="center">
 	<div class="comic-container blogs">
 		<div class="comic" text="">
 			{{ section.title }}
 		</div>
 	</div>
 	{% for page in section.pages %}
-		<a href="{{ page.permalink | safe }}" class="post-tile">
+	<div class="post-tile">
+		<a href="{{ page.permalink | safe }}" class="post-link">
 			<div class="center-text">
 				{{ page.title }}
 			</div>
 		</a>
+	</div>
 	{% endfor %}
 </div>
 {% endblock content %}
