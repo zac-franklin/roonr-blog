@@ -196,6 +196,8 @@ a {
 }
 
 .post-tile {
+  @include theme('border', $primary-color, true, '2px solid');
+  box-sizing: border-box;
   display: block;
   max-width: 1000px;
   margin: 20px auto; 
@@ -203,8 +205,6 @@ a {
 }
 
 .post-link {
-  @include theme('border', $primary-color, true, '2px solid');
-  margin: -2;
   display: inline-block;
   height: 100%;
   width: 100%;
