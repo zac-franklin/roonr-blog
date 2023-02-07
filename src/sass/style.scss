@@ -196,16 +196,14 @@ a {
 }
 
 .post-tile {
+  @include theme('border', $primary-color, true, '2px solid');
   display: block;
   max-width: 1000px;
-  margin: 20px auto; 
+  margin: 20px 7px; 
   width: 100%;
-  padding-left:7px;
-  padding-right: 7px;
 }
 
 .post-link {
-  @include theme('border', $primary-color, true, '2px solid');
   display: inline-block;
   height: 100%;
   width: 100%;
