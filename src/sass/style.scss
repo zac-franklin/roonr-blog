@@ -31,7 +31,7 @@ $themes: (
   ) 
 );
 
-@mixin themeProperty($theme, $property, $color, $additionalPropertiesPositionIsFront, $additionalProperties) {
+@mixin themePropertyAdditional($theme, $property, $color, $additionalPropertiesPositionIsFront, $additionalProperties) {
   @if $additionalPropertiesPositionIsFront {
     #{$property}: unquote($additionalProperties + ' ' + map-get($theme, $color));
   }
@@ -40,14 +40,29 @@ $themes: (
   }
 }
 
-@mixin theme($property, $color, $additionalPropertiesPositionIsFront: false, $additionalProperties: '') {
+@mixin themeAdditional($property, $color, $additionalPropertiesPositionIsFront, $additionalProperties) {
+  $light: map-get($themes, $light-theme);
+  $dark: map-get($themes, $dark-theme);
+
+  @include themePropertyAdditional($light, $property, $color, $additionalPropertiesPositionIsFront, $additionalProperties);
+
+  @media (prefers-color-scheme: dark) {
+    @include themePropertyAdditional($dark, $property, $color, $additionalPropertiesPositionIsFront, $additionalProperties);
+  }
+}
+
+@mixin themeProperty($theme, $property, $color) {
+    #{$property}: map-get($theme, $color);
+}
+
+@mixin theme($property, $color) {
     $light: map-get($themes, $light-theme);
     $dark: map-get($themes, $dark-theme);
 
-    @include themeProperty($light, $property, $color, $additionalPropertiesPositionIsFront, $additionalProperties);
+    @include themeProperty($light, $property, $color);
 
     @media (prefers-color-scheme: dark) {
-      @include themeProperty($dark, $property, $color, $additionalPropertiesPositionIsFront, $additionalProperties);
+      @include themeProperty($dark, $property, $color);
     }
 }
  
@@ -126,8 +141,8 @@ a {
   position: relative;
   padding-top: 10px;
   padding-bottom: 10px;
-  @include theme('border-top', $primary-color, true, '2px solid');
-  @include theme('border-bottom', $primary-color, true, '2px solid');
+  @include themeAdditional('border-top', $primary-color, true, '2px solid');
+  @include themeAdditional('border-bottom', $primary-color, true, '2px solid');
 }
 
 .blogs-grid {
@@ -140,19 +155,19 @@ a {
 }
 
 .blog-dev {
-  @include theme('border', $primary-color, true, '2px solid');
+  @include themeAdditional('border', $primary-color, true, '2px solid');
   grid-column: 1;
   grid-row: 1;
 }
 
 .blog-writing {
-  @include theme('border', $primary-color, true, '2px solid');
+  @include themeAdditional('border', $primary-color, true, '2px solid');
   grid-column: 2;
   grid-row: 1;
 }
 
 .blog-random {
-  @include theme('border', $primary-color, true, '2px solid');
+  @include themeAdditional('border', $primary-color, true, '2px solid');
   grid-column: 3;
   grid-row: 1;
 }
@@ -161,8 +176,8 @@ a {
   position: relative;
   padding-top: 10px;
   padding-bottom: 10px;
-  @include theme('border-top', $primary-color, true, '2px solid');
-  @include theme('border-bottom', $primary-color, true, '2px solid');
+  @include themeAdditional('border-top', $primary-color, true, '2px solid');
+  @include themeAdditional('border-bottom', $primary-color, true, '2px solid');
 }
 
 .projects-grid {
@@ -175,13 +190,13 @@ a {
 }
 
 .project-alphabet {
-  @include theme('border', $primary-color, true, '2px solid');
+  @include themeAdditional('border', $primary-color, true, '2px solid');
   grid-column: 1;
   grid-row: 1;
 }
 
 .project-sunflower {
-  @include theme('border', $primary-color, true, '2px solid');
+  @include themeAdditional('border', $primary-color, true, '2px solid');
   grid-column: 2;
   grid-row: 1;
 }
@@ -196,7 +211,7 @@ a {
 }
 
 .post-tile {
-  @include theme('border', $primary-color, true, '2px solid');
+  @include themeAdditional('border', $primary-color, true, '2px solid');
   box-sizing: border-box;
   display: block;
   max-width: 1000px;
@@ -230,7 +245,7 @@ p {
 .arr {
   font-size:32px;
   width:100%;
-  @include theme('border', $primary-color, true, '2px solid');
+  @include themeAdditional('border', $primary-color, true, '2px solid');
   display:inline-block;
   background-color:transparent;
   text-align: center;
