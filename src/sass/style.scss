@@ -200,6 +200,11 @@ a {
   grid-column: 2;
   grid-row: 1;
 }
+.project-horta {
+  @include themeAdditional('border', $primary-color, true, '2px solid');
+  grid-column: 1;
+  grid-row: 2;
+}
 
 .center-text {
   margin-top: 34px;
@@ -276,6 +281,12 @@ p {
 
 .horta-next-card {
   background-color: #FD7014;
+  @include theme('color', $body-background);
+}
+
+.horta-wrong-card {
+  border-color: red;
+  background-color: red;
   @include theme('color', $body-background);
 }
 
