@@ -285,6 +285,20 @@ p {
 }
 
 .horta-wrong-card {
+  flex: 0 0 auto;
+  font-size: calc(16px + .6vw);;
+  display: flex;
+  border-radius: 5px;
+  border-width: 2px;
+  border-style: solid;
+  padding: 4px;
+  margin-left: 3px;
+  margin-right: 3px;
+  justify-content:center;
+  text-align:center;
+  align-items:center;
+  max-width: 100px;
+  width: 9%;
   border-color: red;
   background-color: red;
   @include theme('color', $body-background);
