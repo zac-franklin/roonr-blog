@@ -304,9 +304,11 @@ p {
   @include theme('color', $body-background);
 }
 
-.horta-button:hover {
-  background-color: #FD7014;
-  @include theme('color', $body-background);
+@media (hover: hover) {
+  .horta-button:hover {
+    background-color: #FD7014;
+    @include theme('color', $body-background);
+  }
 }
 
 .horta-button:active {
