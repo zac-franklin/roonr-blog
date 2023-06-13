@@ -10,7 +10,7 @@
 	<p class="subtitle"><strong>{{ page.date }}</strong></p>
 </div>
 
-{% for vid in page.videos %}
+{% for vid in page.extra.videos %}
 <div class="center-text">
     <video width="1280" height="720" controls>
         <source src="{{ vid }}" type="video/mp4">
