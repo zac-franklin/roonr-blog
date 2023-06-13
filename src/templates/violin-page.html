@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="center">
+	<div class="comic-container blogs">
+		<div class="comic" text="">
+			{{ page.title }}
+		</div>
+	</div>
+	<p class="subtitle"><strong>{{ page.date }}</strong></p>
+</div>
+
+{% for vid in page.videos %}
+<div class="center-text">
+    <video width="1280" height="720" controls>
+        <source src="{{ vid }}" type="video/mp4">
+        Can not play MP4 video
+    </video> 
+</div>
+{% endfor %}
+
+<div>
+	{{ page.content | safe }}
+</div>
+
+<div class="giscus"></div>
+
+<script src="https://giscus.app/client.js"
+        data-repo="zacfpearson/roonr-blog"
+        data-repo-id="R_kgDOHdEH4g"
+        data-category="Blog Comments"
+        data-category-id="DIC_kwDOHdEH4s4CPoXq"
+        data-mapping="specific"
+        data-term="{{ page.title }}"
+        data-reactions-enabled="1"
+        data-emit-metadata="1"
+        data-theme="preferred_color_scheme"
+	data-lang="en"
+        crossorigin="anonymous"
+	async>
+</script>
+
+{% endblock content %}
