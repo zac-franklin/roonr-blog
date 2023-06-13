@@ -164,7 +164,7 @@ a {
 .blog-violin {
   @include themeAdditional('border', $primary-color, true, '2px solid');
   grid-column: 2;
-  grid-row: 2;
+  grid-row: 1;
 }
 
 .blog-writing {
@@ -176,7 +176,7 @@ a {
 .blog-random {
   @include themeAdditional('border', $primary-color, true, '2px solid');
   grid-column: 2;
-  grid-row: 1;
+  grid-row: 2;
 }
 
 .projects {
