@@ -12,7 +12,7 @@
 
 {% for vid in page.extra.videos %}
 <div class="center-video">
-    <video preload="none" width="100%" controls>
+    <video preload="none" playsinline width="100%" controls>
         <source src="{{ vid }}" type="video/mp4">
         Can not play MP4 video
     </video> 
