@@ -222,6 +222,18 @@ a {
   text-align: center;
 }
 
+.center-video {
+  margin-top: 34px;
+  margin-bottom: 34px;
+  display: inline-block;
+  width: 100%;
+  max-width: 1280px;
+  margin-left: 34px;
+  margin-right: 34px;
+  vertical-align: middle;
+  text-align: center;
+}
+
 .post-tile {
   @include themeAdditional('border', $primary-color, true, '2px solid');
   box-sizing: border-box;
