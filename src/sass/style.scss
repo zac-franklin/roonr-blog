@@ -223,12 +223,11 @@ a {
 }
 
 .center-video {
-  margin: 34 auto;
+  margin: 0 auto;
   display: inline-block;
   width: 100%;
-  max-width: 1280px;
-  margin-left: 34px;
-  margin-right: 34px;
+  max-width: 1338px;
+  padding: 34px;
   vertical-align: middle;
   text-align: center;
 }

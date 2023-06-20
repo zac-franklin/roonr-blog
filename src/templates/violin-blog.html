@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="center">
+	<div class="comic-container blogs">
+		<div class="comic" text="">
+			{{ section.title }}
+		</div>
+	</div>
+
+    <img class="my-img" src="images/me_and_violin.jpg" alt="Me Playing Violin"/>
+
+    <div>
+        {{ page.content | safe }}
+    </div>
+
+	{% for page in section.pages %}
+	<div class="post-tile">
+		<a href="{{ page.permalink | safe }}" class="post-link">
+			<div class="center-text">
+				{{ page.title }}
+			</div>
+		</a>
+	</div>
+	{% endfor %}
+</div>
+{% endblock content %}
