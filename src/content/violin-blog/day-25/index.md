@@ -7,5 +7,5 @@ template = "violin-page.html"
 videos = ["https://roonr.com/api/media/v1/violin/Day25.mp4"]
 +++
 
-# Thoughts
-thoughts
+# Third and Forth Fingers Pt. II
+Not any easier the second time around. Like I said last post, the fingers just feel so flimsy and they are really difficult to move from one string to the other. Not sure if this is correct, but I have resorted to pivoting my left elbow to move them from string to string instead of trying to reach. We'll see how that plays out. The pieces again though are more fun to play. Really starting to enjoy it!

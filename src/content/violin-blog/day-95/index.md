@@ -7,5 +7,5 @@ template = "violin-page.html"
 videos = ["https://roonr.com/api/media/v1/violin/Day95.mp4"]
 +++
 
-# Thoughts
-thoughts
+# Leaving For The Last Time
+The pain I feel between my pinky and ring finger on my left hand! To have the forth finger strethed and the first finger stretched back half the time, ouch. My fingers also just felt locked up being this stretched out and when I would realse my forth finger it would just like pop back to my hand and just be stuck there. Another good piece for practicing. 
