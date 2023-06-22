@@ -5,9 +5,8 @@ date = 2023-01-06
 template = "violin-page.html"
 [extra]
 
-[[recordings]]
-vid = "https://roonr.com/api/media/v1/violin/Day11.mp4"
-snap = "https://roonr.com/api/media/v1/violin/4ZREFXBX6Q.jpg"
+recordings = [{
+"vid": "https://roonr.com/api/media/v1/violin/Day11.mp4","snap": "https://roonr.com/api/media/v1/violin/4ZREFXBX6Q.jpg"}]
 +++
 
 # First Finger 

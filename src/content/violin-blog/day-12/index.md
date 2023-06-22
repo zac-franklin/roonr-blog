@@ -5,13 +5,8 @@ date = 2023-01-07
 template = "violin-page.html"
 [extra]
 
-[[recordings]]
-vid = "https://roonr.com/api/media/v1/violin/Day12_1.mp4"
-snap = "https://roonr.com/api/media/v1/violin/Q05EHJCKRH.jpg"
-
-[[recordings]]
-vid = "https://roonr.com/api/media/v1/violin/Day12_2.mp4"
-snap = "https://roonr.com/api/media/v1/violin/V6GL8R3DBO.jpg"
+recordings = [{
+"vid": "https://roonr.com/api/media/v1/violin/Day12_1.mp4", "snap": "https://roonr.com/api/media/v1/violin/Q05EHJCKRH.jpg"},{"vid": "https://roonr.com/api/media/v1/violin/Day12_2.mp4", "snap": "https://roonr.com/api/media/v1/violin/V6GL8R3DBO.jpg"}]
 +++
 
 # Lets go Round 2!

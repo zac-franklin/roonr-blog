@@ -5,9 +5,8 @@ date = 2023-01-22
 template = "violin-page.html"
 [extra]
 
-[[recordings]]
-vid = "https://roonr.com/api/media/v1/violin/Day25.mp4"
-snap = "https://roonr.com/api/media/v1/violin/JDR49EXFMP.jpg"
+recordings = [{
+"vid": "https://roonr.com/api/media/v1/violin/Day25.mp4", "snap": "https://roonr.com/api/media/v1/violin/JDR49EXFMP.jpg"}]
 +++
 
 # Third and Forth Fingers Pt. II
