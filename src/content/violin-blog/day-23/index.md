@@ -4,9 +4,7 @@ description = "Post for Day 23"
 date = 2023-01-20
 template = "violin-page.html"
 [extra]
-
-recordings = [{
-"vid": "https://roonr.com/api/media/v1/violin/Day23.mp4", "snap": "https://roonr.com/api/media/v1/violin/ME0WMX0P3A.jpg"}]
+recordings = [{"vid"= "https://roonr.com/api/media/v1/violin/Day23.mp4", "snap"= "https://roonr.com/api/media/v1/violin/ME0WMX0P3A.jpg"}]
 +++
 
 # Third and Forth Fingers Pt. I

@@ -4,9 +4,7 @@ description = "Post for Day 32"
 date = 2023-01-29
 template = "violin-page.html"
 [extra]
-
-recordings = [{
-"vid": "https://roonr.com/api/media/v1/violin/Day32.mp4", "snap": "https://roonr.com/api/media/v1/violin/VIR69E9S4F.jpg"}]
+recordings = [{"vid"= "https://roonr.com/api/media/v1/violin/Day32.mp4", "snap"= "https://roonr.com/api/media/v1/violin/VIR69E9S4F.jpg"}]
 +++
 
 # Country Gardens( and my dog Patrick )

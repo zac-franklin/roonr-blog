@@ -4,9 +4,7 @@ description = "Post for Day 43"
 date = 2023-02-09
 template = "violin-page.html"
 [extra]
-
-recordings = [{
-"vid": "https://roonr.com/api/media/v1/violin/Day43.mp4", "snap": "https://roonr.com/api/media/v1/violin/EVGCF28J82.jpg"}]
+recordings = [{"vid"= "https://roonr.com/api/media/v1/violin/Day43.mp4", "snap"= "https://roonr.com/api/media/v1/violin/EVGCF28J82.jpg"}]
 +++
 
 # Drunken Sailor
