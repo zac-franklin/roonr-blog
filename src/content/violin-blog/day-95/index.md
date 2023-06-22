@@ -8,4 +8,4 @@ recordings = [{"vid"= "https://roonr.com/api/media/v1/violin/Day95.mp4", "snap"=
 +++
 
 # Leaving For The Last Time
-The pain I feel between my pinky and ring finger on my left hand! To have the forth finger strethed and the first finger stretched back half the time, ouch. My fingers also just felt locked up being this stretched out and when I would realse my forth finger it would just like pop back to my hand and just be stuck there. Another good piece for practicing. 
+The pain I feel between my pinky and ring finger on my left hand! To have the fourth finger stretched and the first finger stretched back half the time, ouch. My fingers also just felt locked up being stretched out and when I would release my fourth finger it would just pop back to my hand and just be stuck there. Another good piece for practicing.
