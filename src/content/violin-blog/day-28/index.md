@@ -4,7 +4,10 @@ description = "Post for Day 28"
 date = 2023-01-25
 template = "violin-page.html"
 [extra]
-videos = ["https://roonr.com/api/media/v1/violin/Day28.mp4"]
+
+[[recordings]]
+vid = "https://roonr.com/api/media/v1/violin/Day28.mp4"
+snap = "https://roonr.com/api/media/v1/violin/9P8BQMFNWR.jpg"
 +++
 
 # Ode to Joy

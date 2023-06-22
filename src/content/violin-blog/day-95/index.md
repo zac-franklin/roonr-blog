@@ -4,7 +4,10 @@ description = "Post for Day 95"
 date = 2023-04-02
 template = "violin-page.html"
 [extra]
-videos = ["https://roonr.com/api/media/v1/violin/Day95.mp4"]
+
+[[recordings]]
+vid = "https://roonr.com/api/media/v1/violin/Day95.mp4"
+snap = "https://roonr.com/api/media/v1/violin/YU3AU3UUQG.jpg"
 +++
 
 # Leaving For The Last Time

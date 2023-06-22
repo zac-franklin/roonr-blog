@@ -10,10 +10,10 @@
 	<p class="subtitle"><strong>{{ page.date }}</strong></p>
 </div>
 
-{% for vid in page.extra.videos %}
+{% for recording in page.extra.recordings %}
 <div class="center-video">
-    <video preload="metadata" playsinline width="100%" controls>
-        <source src="{{ vid }}" type="video/mp4">
+    <video poster="{{ recording.snap }}" preload="none" playsinline width="100%" controls>
+        <source src="{{ recording.vid }}" type="video/mp4">
         Can not play MP4 video
     </video> 
 </div>
