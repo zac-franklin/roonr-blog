@@ -4,7 +4,7 @@ description = "Post for Day 4"
 date = 2022-12-30
 template = "violin-page.html"
 [extra]
-recordings = [{"vid"= "https://roonr.com/api/media/v1/violin/Day4.mp4", "snap"= "https://roonr.com/api/media/v1/violin/B9EBI8YJ01.jpg"}]
+recordings = [{"vid"= "https://roonr.com/api/media/v1/violin/GjhaY2lFTlfoq3G.mp4", "snap"= "https://roonr.com/api/media/v1/violin/B9EBI8YJ01.jpg"}]
 +++
 
 # Open Strings #2
