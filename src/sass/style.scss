@@ -169,25 +169,25 @@ a {
   grid-auto-rows: minmax(100px, auto);
 }
 
-.blog-dev {
+.blog-dortmund {
   @include themeAdditional('border', $primary-color, true, '2px solid');
   grid-column: 1;
   grid-row: 1;
 }
 
-.blog-violin {
+.blog-sligo {
   @include themeAdditional('border', $primary-color, true, '2px solid');
   grid-column: 2;
   grid-row: 1;
 }
 
-.blog-writing {
+.blog-dev {
   @include themeAdditional('border', $primary-color, true, '2px solid');
   grid-column: 1;
   grid-row: 2;
 }
 
-.blog-random {
+.blog-writing {
   @include themeAdditional('border', $primary-color, true, '2px solid');
   grid-column: 2;
   grid-row: 2;
