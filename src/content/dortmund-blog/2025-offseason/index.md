@@ -24,7 +24,7 @@ Barring any injuries, I'm optimistic for this season. The players shined under K
 To put cold hard numbers to it, again BARRING ANY INJURIES, I think we compete for 2nd in the Bundesliga and have a similar run in the Champions league. Honestly though, I'm not concerned with the Champions League this season. We could get knocked out it in the group stages for all I care. All I want this season is to see a consistent, solid performance domestically.
 \
 \
-Now, if we have injuries, we are in trouble. The squad is razor thin. If we lose anyone the backup - if there even is one - for the injured player is at a far lesser quality and there would be no sub for that player. So, if even one of the star players go down with an injury we will be fighting for 4th again and will need another fantastic winter transfer market to save us. 
+Now, if we have injuries, we are in trouble. The squad is razor thin. If we lose anyone the backup - if there even is one - for the injured player is at a far lesser quality and there would be no sub for that player. So, if even one of our star players goes down with an injury we will be fighting for 4th again and will need another fantastic winter transfer market to save us. 
 \
 \
 Let's go Dortmund!
