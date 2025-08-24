@@ -1,5 +1,5 @@
 +++
-title = "2025 Offseason"
+title = "2025 Opener"
 description = "Review of the 2025  Season Opener"
 date = 2025-08-24
 template = "page.html"
