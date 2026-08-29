@@ -10,15 +10,14 @@ $text-color: "text-color";
 $href-color: "href-color";
 
 $themes: ( 
-  $light-theme: (
-    $primary-color: #FD7014, 
-    $inline-color: #222831, 
-    $outline-color: #222831, 
-    $shadow-color: #393E46,
-    $body-background: #EEEEEE,
-    $text-color: #222831,
-    $href-color: #4F3B78,
-
+  $light-theme: ( 
+    $primary-color: #EEEEEE, 
+    $inline-color: #393E46, 
+    $outline-color: #393E46, 
+    $shadow-color: #FD7014,
+    $body-background: #222831,
+    $text-color: #EEEEEE,
+    $href-color: #927FBF,
   ), 
   $dark-theme: ( 
     $primary-color: #EEEEEE, 
@@ -169,28 +168,16 @@ a {
   grid-auto-rows: minmax(100px, auto);
 }
 
-.blog-dortmund {
-  @include themeAdditional('border', $primary-color, true, '2px solid');
-  grid-column: 1;
-  grid-row: 1;
-}
-
-.blog-sligo {
-  @include themeAdditional('border', $primary-color, true, '2px solid');
-  grid-column: 2;
-  grid-row: 1;
-}
-
 .blog-dev {
   @include themeAdditional('border', $primary-color, true, '2px solid');
   grid-column: 1;
-  grid-row: 2;
+  grid-row: 1;
 }
 
 .blog-writing {
   @include themeAdditional('border', $primary-color, true, '2px solid');
   grid-column: 2;
-  grid-row: 2;
+  grid-row: 1;
 }
 
 .projects {
