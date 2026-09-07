@@ -11,21 +11,21 @@ $href-color: "href-color";
 
 $themes: ( 
   $light-theme: ( 
-    $primary-color: #EEEEEE, 
-    $inline-color: #393E46, 
-    $outline-color: #393E46, 
-    $shadow-color: #FD7014,
-    $body-background: #222831,
-    $text-color: #EEEEEE,
+    $primary-color: #FF8B1F, 
+    $inline-color: #1A0C00, 
+    $outline-color: #1A0C00, 
+    $shadow-color: #FF7B00,
+    $body-background: #A34F00,
+    $text-color: #FFDAB8,
     $href-color: #927FBF,
   ), 
   $dark-theme: ( 
-    $primary-color: #EEEEEE, 
-    $inline-color: #393E46, 
-    $outline-color: #393E46, 
-    $shadow-color: #FD7014,
-    $body-background: #222831,
-    $text-color: #EEEEEE,
+    $primary-color: #FF8B1F, 
+    $inline-color: #1A0C00, 
+    $outline-color: #1A0C00, 
+    $shadow-color: #FF7B00,
+    $body-background: #A34F00,
+    $text-color: #FFDAB8,
     $href-color: #927FBF,
   ) 
 );
@@ -85,8 +85,9 @@ a {
 }
 
 .my-img {
-  margin-top: 10px;
-  max-width: 500px;
+    max-width: 100%;
+    max-height: auto;
+    margin: auto;
 }
 
 .my-video {
@@ -119,7 +120,7 @@ a {
   font: 42px $font-stack;
   letter-spacing: .2em;
   text-align: center;
-  @include theme('color', $primary-color);
+  @include theme('color', $text-color);
 }
 
 .page-content {
@@ -335,3 +336,57 @@ p {
   @include theme('color', $body-background);
 }
 
+.wrap {
+  font: 15cqw $font-stack;
+  letter-spacing: .2em;
+  text-align: center;
+  @include theme('color', $shadow-color);
+}
+
+//Personal Guidelines
+// Use 800 as background
+// 700 for hover
+// 950 for dark overlays that need text
+// 50/10 for text 
+// 400 and 500 for borders and fun colors
+// 100 for hover text
+
+
+// # Orange
+// --color-50: #FFF2E6;
+// --color-100: #FFDAB8;
+// --color-200: #FFC28A;
+// --color-300: #FFAB5C;
+// --color-400: #FF8B1F;
+// --color-500: #FF7B00;
+// --color-600: #D16500;
+// --color-700: #A34F00;
+// --color-800: #753900;
+// --color-900: #472300;
+// --color-950: #1A0C00;
+
+// #Green
+// --color-50: #E6FFF2;
+// --color-100: #B8FFDA;
+// --color-200: #8AFFC2;
+// --color-300: #5CFFAB;
+// --color-400: #1FFF8B;
+// --color-500: #00FF7B;
+// --color-600: #00D165;
+// --color-700: #00A34F;
+// --color-800: #007539;
+// --color-900: #004723;
+// --color-950: #001A0C;
+
+// # Purple
+// --color-50: #F2E6FF;
+// --color-100: #DAB8FF;
+// --color-200: #C28AFF;
+// --color-300: #AB5CFF;
+// --color-400: #8B1FFF;
+// --color-500: #7B00FF;
+// --color-600: #6500D1;
+// --color-700: #4F00A3;
+// --color-800: #390075;
+// --color-900: #230047;
+// --color-950: #0C001A;
