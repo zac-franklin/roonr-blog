@@ -85,9 +85,11 @@ a {
 }
 
 .my-img {
-    max-width: 100%;
-    max-height: auto;
-    margin: auto;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 100vh;
+  // margin: auto;
 }
 
 .my-video {
@@ -117,7 +119,7 @@ a {
 
 .comic {
   position: relative;
-  font: 42px $font-stack;
+  font: 4rem $font-stack;
   letter-spacing: .2em;
   text-align: center;
   @include theme('color', $text-color);
@@ -143,6 +145,42 @@ a {
   @include theme('color', $outline-color);
 }
 
+.about-me {
+  border: 2px solid #472300;
+  background-color: #FFDAB8;
+  color: #472300;
+  min-width: 0;
+}
+
+.splash-link {
+  position: relative;
+  display: inline-block;
+  width: max-content;
+}
+
+.splash {
+  z-index: 1;
+  position: absolute;
+  display: inline-block;
+  background: #FF8B1F;
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(0% 0%, 27% 24%, 28% 0%, 46% 24%, 60% 0%, 71% 28%, 99% 1%, 83% 30%, 99% 28%, 84% 40%, 100% 51%, 82% 60%, 100% 69%, 78% 73%, 100% 100%, 66% 79%, 61% 100%, 45% 78%, 33% 100%, 28% 81%, 0% 100%, 21% 65%, 0% 61%, 24% 47%, 0% 32%, 15% 28%);
+}
+
+.about-me a {
+  z-index: 20;
+  position: relative;
+  display: inline-block;
+  font: 4rem $font-stack;
+  letter-spacing: .2em;
+  text-align: center;
+  @include theme('color', $href-color);
+  align-items: center;
+  justify-content: center;
+  filter: drop-shadow(0 0 0.1vmin var(--black)) drop-shadow(0 0 0.1vmin var(--black)) drop-shadow(0 0 0 var(--black)) drop-shadow(0 0 0 var(--black)) drop-shadow(0 0 0 var(--black)) drop-shadow(0 0 0 var(--black)) drop-shadow(0 0 0 var(--black));
+}
+
 .comic-container {
   position: relative;
   margin: 0 auto;
@@ -152,12 +190,15 @@ a {
   text-align: center;
 }
 
+
 .blogs {
   position: relative;
   padding-top: 10px;
   padding-bottom: 10px;
-  @include themeAdditional('border-top', $primary-color, true, '2px solid');
-  @include themeAdditional('border-bottom', $primary-color, true, '2px solid');
+  background-color: #D16500;
+  background-image: radial-gradient(#753900 20%, transparent 0), radial-gradient(#753900 20%, transparent 0);
+  background-size: 10px 10px;
+  background-position: 0 0, 5px 5px;
 }
 
 .blogs-grid {
@@ -167,26 +208,46 @@ a {
   grid-template-columns: repeat(2, 1fr);
   gap: 10px;
   grid-auto-rows: minmax(100px, auto);
+  max-width: 1500px;
+}
+
+.grid-font-size {
+  font: 15cqw $font-stack;
 }
 
 .blog-dev {
-  @include themeAdditional('border', $primary-color, true, '2px solid');
+  container-type: inline-size;
+  border: 2px solid #DAB8FF;
   grid-column: 1;
   grid-row: 1;
+  background-color: #4F00A3;
+  color: #DAB8FF;
+  min-width: 0;
+  background: 
+    radial-gradient(circle at 50% 50%, #4F00A3 0 4vmin, #fff0 10vmin 100%), 
+    repeating-conic-gradient(from 0deg at 50% 50%, #4F00A3 0 6deg, #6500D1 0 12deg);
 }
 
 .blog-writing {
-  @include themeAdditional('border', $primary-color, true, '2px solid');
+  container-type: inline-size;
+  border: 2px solid #B8FFDA;
   grid-column: 2;
   grid-row: 1;
+  background: 
+    radial-gradient(ellipse at 50% 50%, #00A34F 0 12vmin, #fff0 30vmin 100%), 
+    repeating-conic-gradient(from 0deg at 50% 50%, #00A34F 0 6deg, #00D165 0 12deg);
+  color: #B8FFDA;
+  min-width: 0;
 }
 
 .projects {
   position: relative;
   padding-top: 10px;
   padding-bottom: 10px;
-  @include themeAdditional('border-top', $primary-color, true, '2px solid');
-  @include themeAdditional('border-bottom', $primary-color, true, '2px solid');
+  background-color: #D16500;
+  background-image: radial-gradient(#753900 20%, transparent 0), radial-gradient(#753900 20%, transparent 0);
+  background-size: 10px 10px;
+  background-position: 0 0, 5px 5px;
 }
 
 .projects-grid {
@@ -199,20 +260,38 @@ a {
 }
 
 .project-alphabet {
-  @include themeAdditional('border', $primary-color, true, '2px solid');
+  container-type: inline-size;
+  border: 2px solid #B8FFDA;
+  background: 
+    radial-gradient(ellipse at 50% 50%, #00A34F 0 12vmin, #fff0 30vmin 100%), 
+    repeating-conic-gradient(from 0deg at 50% 50%, #00A34F 0 6deg, #00D165 0 12deg);
+  color: #B8FFDA;
+  min-width: 0;
   grid-column: 1;
-  grid-row: 1;
+  grid-row: 2;
 }
 
 .project-sunflower {
-  @include themeAdditional('border', $primary-color, true, '2px solid');
+  container-type: inline-size;
+  border: 2px solid #DAB8FF;
+  background: 
+    radial-gradient(ellipse at 50% 50%, #4F00A3 0 12vmin, #fff0 30vmin 100%), 
+    repeating-conic-gradient(from 0deg at 50% 50%, #4F00A3 0 6deg, #6500D1 0 12deg);
+  color: #DAB8FF;
   grid-column: 2;
   grid-row: 1;
 }
+
 .project-horta {
-  @include themeAdditional('border', $primary-color, true, '2px solid');
+  container-type: inline-size;
+  border: 2px solid #FFDAB8;
+  background: 
+    radial-gradient(ellipse at 50% 50%, #A34F00 0 8vmin, #fff0 15vmin 100%), 
+    repeating-conic-gradient(from 0deg at 50% 50%, #A34F00 0 6deg, #D16500 0 12deg);
+  color: #FFDAB8;
+  min-width: 0;
   grid-column: 1;
-  grid-row: 2;
+  grid-row: 1;
 }
 
 .center-text {

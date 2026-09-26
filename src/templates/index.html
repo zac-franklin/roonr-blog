@@ -2,20 +2,23 @@
 
 {% block header %}
 
-<div style="position: relative; width: 100%;container-type: inline-size;">
-	<h1 style="position: absolute;">
-		<div href="" class="typewrite" data-period="2000" data-type='[ "Hello", "Moin", "Привіт", "こんにちは", "Sawubona", "Hola", "Dia dhuit", "안녕하세요", "Bonjour", "مرحبا", "नमस्ते", "Γεια σου", "שלום", "Ciao", "สวัสดี", "Hujambo"  ]'>
+<div style="position: relative;display: flex;max-width: 100%; max-height:100vh;align-items: center;justify-content: center;">
+	<div style="position: absolute;display:block;container-type: inline-size;aspect-ratio: 4/3; height:100%;">
+		<div href="" class="typewrite">
 			<span class="wrap"></span>
 		</div>
-	</h1>
-
+	</div>
+	
 	<img class="my-img" src="images/me_and_nephin.jpg" alt="Me"/>
 </div>
 
-<div class="comic-container spiel">
+<div class="comic-container blogs" style="margin-top: 20px;">
 	<div class="comic" text="">
-           {{ section.content | safe }} 	
+		{{ section.title }}
 	</div>
+</div>
+<div class="page-content about-me" style="margin-top: 20px; margin-bottom: 20px; padding-top: 80px; padding-bottom: 80px; padding-left: 50px; padding-right: 50px;">
+	I'm Zac and I really like developing. On my site you'll find small projects and educational blog posts. I also like to write and post fun write-ups as well. Want to skip right to the code? Check out my <div class="splash-link"><div class="splash"></div><a href="https://github.com/zac-franklin">GitHub</a></div>. Interested in hiring me? Here's my <a href="/ZacPearsonCV-generic.pdf">resume</a>. Like what you see? Connect with me on <a href="https://linkedin.com/in/zac-franklin">LinkedIn</a>!
 </div>
 
 {% endblock header %}
@@ -28,12 +31,12 @@
 </div>
 <div class="blogs-grid">
 	<a href="/dev-blog" class="blog-dev">
-		<div class="center-text">
+		<div class="center-text grid-font-size">
 			dev
 		</div>
 	</a>
 	<a href="/writing-blog" class="blog-writing">
-		<div class="center-text">
+		<div class="center-text grid-font-size">
 			writing
 		</div>
 	</a>
@@ -45,19 +48,19 @@
 	</div>
 </div>
 <div class="projects-grid">
-	<a href="/alphabet-game" class="project-alphabet">
-		<div class="center-text">
-			alphabet game
+	<a href="/horta" class="project-horta">
+		<div class="center-text grid-font-size">
+			horta
 		</div>
 	</a>
 	<a href="/sunflower" class="project-sunflower">
-		<div class="center-text">
+		<div class="center-text grid-font-size">
 			sunflower
 		</div>
 	</a>
-	<a href="/horta" class="project-horta">
-		<div class="center-text">
-			horta
+	<a href="/alphabet-game" class="project-alphabet">
+		<div class="center-text grid-font-size">
+			alphabet
 		</div>
 	</a>
 </div>
