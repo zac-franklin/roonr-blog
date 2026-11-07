@@ -12,56 +12,95 @@
 	<img class="my-img" src="images/me_and_nephin.jpg" alt="Me"/>
 </div>
 
-<div class="comic-container blogs" style="margin-top: 20px;">
-	<div class="comic" text="">
-		{{ section.title }}
+<div style="max-width: 1000px;">
+	<div class="comic-container blogs" style="float: left; margin-top: 20px;">
+		<div class="comic" text="">
+			{{ section.title }}
+		</div>
 	</div>
-</div>
-<div class="page-content about-me" style="margin-top: 20px; margin-bottom: 20px; padding-top: 80px; padding-bottom: 80px; padding-left: 50px; padding-right: 50px;">
-	I'm Zac and I really like developing. On my site you'll find small projects and educational blog posts. I also like to write and post fun write-ups as well. Want to skip right to the code? Check out my <div class="splash-link"><div class="splash"></div><a href="https://github.com/zac-franklin">GitHub</a></div>. Interested in hiring me? Here's my <a href="/ZacPearsonCV-generic.pdf">resume</a>. Like what you see? Connect with me on <a href="https://linkedin.com/in/zac-franklin">LinkedIn</a>!
+	<div class="about-me-border" style="margin-top: 20px; margin-bottom: 20px; padding-top: 80px; padding-bottom: 80px; padding-left: 50px; padding-right: 50px;">
+		<div class="page-content about-me">
+			<div class="about-me-text-shadow"></div>
+			I'm Zac and I really like developing. On my site you'll find small projects and educational blog posts. I also like to write and post fun write-ups as well. Want to skip right to the code? Check out my <a href="https://github.com/zac-franklin">GitHub</a>. Interested in hiring me? Here's my <a href="/ZacPearsonCV-generic.pdf">resume</a>. Like what you see? Connect with me on <a href="https://linkedin.com/in/zac-franklin">LinkedIn</a>!
+		</div>
+	</div>
 </div>
 
 {% endblock header %}
 
 {% block content %}
-<div class="comic-container blogs">
-	<div class="comic" text="">
-		<p>BLOGS</p>
+<div style="max-width: 1000px;margin-left: auto; margin-right: 0; margin-top: 40px;">
+	<div class="comic-container blogs" style="float:left;margin-top: 20px;">
+		<div class="comic" text="">
+			<p>BLOGS</p>
+		</div>
 	</div>
-</div>
-<div class="blogs-grid">
-	<a href="/dev-blog" class="blog-dev">
-		<div class="center-text grid-font-size">
-			dev
-		</div>
-	</a>
-	<a href="/writing-blog" class="blog-writing">
-		<div class="center-text grid-font-size">
-			writing
-		</div>
-	</a>
+	<div class="about-me-border" style="margin-top: 20px; margin-bottom: 20px; padding-top: 80px; padding-bottom: 80px; padding-left: 50px; padding-right: 50px;">
+		<!-- <div class="blogs-grid"> -->
+			<a href="/dev-blog" class="blog-dev" style="position:relative;clear:both;">
+				<div class="container-dev grid-font-size">
+					<div>
+						<div class="blog-dev-shadow"></div>
+						dev
+					</div>
+					<!-- <div class="grid-font-size" style="width:100%;">
+						 <svg viewBox="45 60 400 320" xmlns="http://www.w3.org/2000/svg">
+							<path fill="#fff" d="M 90 210 C 90 180 90 150 90 150 C 150 150 180 150 180 150 C 180 150 300 150 300 150 C 300 150 330 150 390 150 C 390 150 390 180 390 210 C 390 240 390 270 390 270 C 330 270 300 270 300 270 C 300 270 180 270 180 270 C 180 270 150 270 90 270 C 90 270 90 240 90 210" mask="url(#knockout-text)" >
+							</path>
+							<mask id="knockout-text">
+							<rect width="100%" height="100%" fill="#fff" x="0" y="0" />
+							<text x="0" y="0" fill="#000">dev</text>
+							</mask>
+						</svg>
+					</div> -->
+					<!-- <img src="" style="width:100%;"/> -->
+					 <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 285 80" preserveAspectRatio="xMidYMid slice">
+						<defs>
+						<mask id="mask" x="0" y="0" width="100%" height="100%" >
+						<rect x="0" y="0" width="100%" height="100%" />
+						<text x="72"  y="50">dev</text>
+						</mask>
+					</defs>
+					<rect x="0" y="0" width="100%" height="100%" />
+					</svg> -->
+				</div>
+			</a>
+			<a href="/writing-blog" class="blog-writing" style="position:relative;">
+				<div class="container-writing grid-font-size">
+					<div>
+						<div class="blog-writing-shadow"></div>
+						writing
+					</div>
+				</div>
+			</a>
+		<!-- </div> -->
+	</div>
 </div>
 
-<div class="comic-container projects">
-	<div class="comic" text="">
-		<p>PROJECTS</p>
+<div style="max-width: 1000px; margin-top: 40px;">
+	<div class="comic-container blogs" style="float: left; margin-top: 20px;">
+		<div class="comic" text="">
+			<p>PROJECTS</p>
+		</div>
 	</div>
-</div>
-<div class="projects-grid">
-	<a href="/horta" class="project-horta">
-		<div class="center-text grid-font-size">
-			horta
+	<div class="about-me-border" style="margin-top: 20px; margin-bottom: 20px; padding-top: 80px; padding-bottom: 80px; padding-left: 50px; padding-right: 50px;">
+		<div class="projects-grid">
+			<a href="/horta" class="project-horta">
+				<div class="center-text grid-font-size">
+					horta
+				</div>
+			</a>
+			<a href="/sunflower" class="project-sunflower">
+				<div class="center-text grid-font-size">
+					sunflower
+				</div>
+			</a>
+			<a href="/alphabet-game" class="project-alphabet">
+				<div class="center-text grid-font-size">
+					alphabet
+				</div>
+			</a>
 		</div>
-	</a>
-	<a href="/sunflower" class="project-sunflower">
-		<div class="center-text grid-font-size">
-			sunflower
-		</div>
-	</a>
-	<a href="/alphabet-game" class="project-alphabet">
-		<div class="center-text grid-font-size">
-			alphabet
-		</div>
-	</a>
+	</div>
 </div>
 {% endblock content %}

@@ -15,7 +15,7 @@ $themes: (
     $inline-color: #1A0C00, 
     $outline-color: #1A0C00, 
     $shadow-color: #FF7B00,
-    $body-background: #A34F00,
+    $body-background: #472300,
     $text-color: #FFDAB8,
     $href-color: #927FBF,
   ), 
@@ -24,7 +24,7 @@ $themes: (
     $inline-color: #1A0C00, 
     $outline-color: #1A0C00, 
     $shadow-color: #FF7B00,
-    $body-background: #A34F00,
+    $body-background: #472300,
     $text-color: #FFDAB8,
     $href-color: #927FBF,
   ) 
@@ -112,7 +112,6 @@ a {
   font-family: $font-shadow;
   pointer-events: none;
   margin: 0 auto;
-  width: 100%;
   @include theme('color', $shadow-color);
 }
  
@@ -121,7 +120,7 @@ a {
   position: relative;
   font: 4rem $font-stack;
   letter-spacing: .2em;
-  text-align: center;
+  left: 15px;
   @include theme('color', $text-color);
 }
 
@@ -141,15 +140,36 @@ a {
   font-family: $font-outline;
   pointer-events: none;
   margin: 0 auto;
-  width: 100%;
   @include theme('color', $outline-color);
 }
 
+// .about-me-border {
+//   position: relative;
+//   background: linear-gradient(to right, green, lightgreen);
+//   padding: 3px;
+// }
+.about-me-border {
+  margin-left: 45px;
+  border: 3px solid transparent;
+  border-image: linear-gradient(135deg, #FF8B1F 35%, #FF7B00 55%);
+  border-image-slice: 1;
+}
+
 .about-me {
-  border: 2px solid #472300;
-  background-color: #FFDAB8;
-  color: #472300;
+  // background-color: #1A0C00;
+  position: relative;
+  color: #FFF2E6;
   min-width: 0;
+}
+
+.about-me-text-shadow {
+  z-index: -1;
+  position: absolute;
+  background: #0C001A;
+  opacity: 0.3;
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(100% 1%, 75% 100%, 0% 56%);
 }
 
 .splash-link {
@@ -161,47 +181,52 @@ a {
 .splash {
   z-index: 1;
   position: absolute;
-  display: inline-block;
+  float:left;
   background: #FF8B1F;
   width: 100%;
   height: 100%;
   clip-path: polygon(0% 0%, 27% 24%, 28% 0%, 46% 24%, 60% 0%, 71% 28%, 99% 1%, 83% 30%, 99% 28%, 84% 40%, 100% 51%, 82% 60%, 100% 69%, 78% 73%, 100% 100%, 66% 79%, 61% 100%, 45% 78%, 33% 100%, 28% 81%, 0% 100%, 21% 65%, 0% 61%, 24% 47%, 0% 32%, 15% 28%);
 }
 
-.about-me a {
-  z-index: 20;
-  position: relative;
-  display: inline-block;
-  font: 4rem $font-stack;
-  letter-spacing: .2em;
-  text-align: center;
-  @include theme('color', $href-color);
-  align-items: center;
-  justify-content: center;
-  filter: drop-shadow(0 0 0.1vmin var(--black)) drop-shadow(0 0 0.1vmin var(--black)) drop-shadow(0 0 0 var(--black)) drop-shadow(0 0 0 var(--black)) drop-shadow(0 0 0 var(--black)) drop-shadow(0 0 0 var(--black)) drop-shadow(0 0 0 var(--black));
-}
+// .about-me a {
+//   z-index: 20;
+//   position: relative;
+//   display: inline-block;
+//   font: 4rem $font-stack;
+//   letter-spacing: .2em;
+//   text-align: center;
+//   @include theme('color', $href-color);
+//   align-items: center;
+//   justify-content: center;
+//   filter: drop-shadow(0 0 0.1vmin var(--black)) drop-shadow(0 0 0.1vmin var(--black)) drop-shadow(0 0 0 var(--black)) drop-shadow(0 0 0 var(--black)) drop-shadow(0 0 0 var(--black)) drop-shadow(0 0 0 var(--black)) drop-shadow(0 0 0 var(--black));
+// }
 
 .comic-container {
   position: relative;
   margin: 0 auto;
   top: 0px;
   left: 0px;
-  width: 100%;
   text-align: center;
 }
 
 
 .blogs {
   position: relative;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  background-color: #D16500;
-  background-image: radial-gradient(#753900 20%, transparent 0), radial-gradient(#753900 20%, transparent 0);
-  background-size: 10px 10px;
-  background-position: 0 0, 5px 5px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-right: 10px;
+  background-color: #1A0C00;
+  // background-image: linear-gradient(135deg, #8B1FFF 40%, #DAB8FF 45%, #B8FFDA 55%, #1FFF8B 60%);
+  // background-color: #D16500;
+  // background-image: radial-gradient(#753900 20%, transparent 0), radial-gradient(#753900 20%, transparent 0);
+  // background-size: 10px 10px;
+  // background-position: 0 0, 5px 5px;
 }
 
 .blogs-grid {
+  clear:both;
   padding-top: 50px;
   padding-bottom: 50px;
   display: grid;
@@ -216,28 +241,75 @@ a {
 }
 
 .blog-dev {
-  container-type: inline-size;
-  border: 2px solid #DAB8FF;
-  grid-column: 1;
-  grid-row: 1;
-  background-color: #4F00A3;
-  color: #DAB8FF;
+  // container-type: inline-size;
+  // grid-column: 1;
+  // grid-row: 1;
+  // background-image: url('/images/code.png');
+  // -webkit-text-fill-color: transparent;
+  // -webkit-background-clip: text;
+  // background-clip: text;
+  /* Below is not needed */
+  display:block;
+  color: #FFF2E6;
   min-width: 0;
-  background: 
-    radial-gradient(circle at 50% 50%, #4F00A3 0 4vmin, #fff0 10vmin 100%), 
-    repeating-conic-gradient(from 0deg at 50% 50%, #4F00A3 0 6deg, #6500D1 0 12deg);
+  width: 100%;
+}
+
+.blog-dev-shadow {
+  background-image: url('/images/code.png');
+  // /* Below is not needed */
+  background-size: cover;
+  z-index: -1;
+  position: absolute;
+  opacity: 0.3;
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(100% 1%, 75% 100%, 0% 56%);
+}
+
+.container-dev {
+  /* Below is not needed */
+  display:block;
+  width: 100%;
+  text-align: center;
+}
+
+.container-writing {
+  display:block;
+  width: 100%;
+  text-align: center;
+}
+
+
+.centered {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.blog-writing-shadow {
+  background-image: url('/images/writing.png');
+  // /* Below is not needed */
+  background-size: cover;
+  z-index: -1;
+  position: absolute;
+  opacity: 0.3;
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(100% 1%, 75% 100%, 0% 56%);
 }
 
 .blog-writing {
-  container-type: inline-size;
-  border: 2px solid #B8FFDA;
-  grid-column: 2;
-  grid-row: 1;
-  background: 
-    radial-gradient(ellipse at 50% 50%, #00A34F 0 12vmin, #fff0 30vmin 100%), 
-    repeating-conic-gradient(from 0deg at 50% 50%, #00A34F 0 6deg, #00D165 0 12deg);
-  color: #B8FFDA;
+  // container-type: inline-size;
+  // grid-column: 2;
+  // grid-row: 1;
+  display:block;
+  color: #FFF2E6;
   min-width: 0;
+  width: 100%;
 }
 
 .projects {
@@ -416,10 +488,25 @@ p {
 }
 
 .wrap {
-  font: 15cqw $font-stack;
+  font: 10cqw $font-stack;
   letter-spacing: .2em;
   text-align: center;
   @include theme('color', $shadow-color);
+}
+
+.container svg { 
+  width: 100%;
+  top: 0;
+  left: 0; // needed for FF, Safari, Edge
+  height: 100%;
+}
+
+.container svg rect {
+  fill: white;
+}
+.container svg > rect {
+    -webkit-mask: url(#mask);
+    mask: url(#mask);
 }
 
 //Personal Guidelines
